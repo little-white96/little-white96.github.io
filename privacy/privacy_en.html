@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning 輕鬆學英文 隱私權政策</title>
+    <title>eLearning Easy English - Privacy Policy</title>
     <style>
         body {
-            font-family: "Microsoft JhengHei", "PingFang TC", Arial, sans-serif;
-            line-height: 1.8;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             color: #333;
             margin: 0;
             padding: 50px 20px;
             background-color: #f4f7f9;
         }
 
-        /* 標題與日期：置中 */
+        /* Header & Date: Centered */
         .header-section {
             text-align: center;
             margin-bottom: 40px;
@@ -31,7 +31,7 @@
             font-size: 0.95em;
         }
 
-        /* 內容區塊容器 */
+        /* Main Content Container */
         .main-content {
             max-width: 850px;
             margin: 0 auto;
@@ -51,7 +51,7 @@
             margin-bottom: 20px;
         }
 
-        /* 關鍵對齊樣式：Flexbox */
+        /* Layout: Flexbox */
         .flex-row {
             display: flex;
             margin-bottom: 15px;
@@ -59,15 +59,15 @@
         }
 
         .flex-label {
-            flex-shrink: 0;       /* 防止標題被壓縮 */
+            flex-shrink: 0;
             font-weight: bold;
-            white-space: nowrap;  /* 確保標題不換行 */
             color: #34495e;
+            /* Increased width slightly for English labels */
+            min-width: 160px; 
         }
 
         .flex-text {
             flex-grow: 1;
-            padding-left: 2px;    /* 微調與冒號的距離 */
         }
 
         .highlight {
@@ -79,19 +79,19 @@
             margin-top: 8px;
             color: #555;
             font-size: 0.95em;
-            /* 調整 padding-left 數值，使其對齊上方文字開頭 */
-            padding-left: 0; 
-            margin-left: 0;
             display: block;
         }
 
-        /* 手機版優化 */
+        /* Mobile Optimization */
         @media (max-width: 600px) {
             .main-content {
                 padding: 25px 20px;
             }
             .flex-row {
-                /* 在極小螢幕下可視情況改回 block，但目前設定能維持對齊 */
+                flex-direction: column;
+            }
+            .flex-label {
+                margin-bottom: 5px;
             }
         }
     </style>
@@ -99,78 +99,78 @@
 <body>
 
     <div class="header-section">
-        <h1>eLearning 輕鬆學英文</h1>
-        <h1>隱私權政策</h1>
-        <p class="update-date">最後更新日期：2026年3月18日</p>
+        <h1>eLearning Easy English</h1>
+        <h1>Privacy Policy</h1>
+        <p class="update-date">Last Updated: March 18, 2026</p>
     </div>
 
     <div class="main-content">
-        <h2>1. 簡介</h2>
-        <p>歡迎使用 eLearning 輕鬆學英文（以下簡稱「本應用程式」）。本政策旨在說明我們如何處理您的個人資訊，確保您在使用過程中的數據安全與隱私。</p>
+        <h2>1. Introduction</h2>
+        <p>Welcome to eLearning Easy English (hereinafter referred to as "the App"). This policy describes how we handle your personal information to ensure data security and privacy while using our services.</p>
 
-        <h2>2. 我們收集的資料</h2>
-        <p>我們僅收集實現功能所必需的最低限度資料：</p>
+        <h2>2. Information We Collect</h2>
+        <p>We only collect the minimum amount of information necessary to provide our features:</p>
         
         <div class="flex-row">
-            <div class="flex-label">・個人識別資訊：</div>
-            <div class="flex-text">為了在 App 中個人化顯示，我們會收集您主動輸入的<span class="highlight">「名稱或暱稱」</span>。您可以自由選擇使用真實姓名或暱稱。</div>
+            <div class="flex-label">・Identity Info:</div>
+            <div class="flex-text">To personalize your experience, we collect the <span class="highlight">"Name or Nickname"</span> you provide. You may choose to use either your real name or a pseudonym.</div>
         </div>
 
         <div class="flex-row">
-            <div class="flex-label">・設備與技術資訊：</div>
+            <div class="flex-label">・Technical Info:</div>
             <div class="flex-text">
-                為了維持系統運作，我們會自動收集以下項目：
+                To maintain system operations, we automatically collect:
                 <div class="sub-info">
-                    ・裝置識別碼：如 Android ID (Android) 或 IDFV (iOS)。<br>
-                    ・系統設定：系統語系、平台類型、App 版本、螢幕尺寸。
+                    ・Device Identifiers: e.g., Android ID (Android) or IDFV (iOS).<br>
+                    ・System Settings: Language, Platform type, App version, Screen size.
                 </div>
             </div>
         </div>
 
-        <h2>3. 資料使用目的</h2>
+        <h2>3. Purpose of Data Use</h2>
         <div class="flex-row">
-            <div class="flex-label">・使用者識別：</div>
-            <div class="flex-text">透過裝置識別碼檢查是否為同一設備，用以判斷新舊使用者，確保您的設定與進度能正確連結。</div>
+            <div class="flex-label">・User Identification:</div>
+            <div class="flex-text">We use device identifiers to recognize returning users, ensuring your settings and progress are correctly linked.</div>
         </div>
         <div class="flex-row">
-            <div class="flex-label">・優化服務：</div>
-            <div class="flex-text">協助我們提供、維持並持續改善 App 的相容性與功能體驗。</div>
-        </div>
-
-        <h2>4. 第三方服務：AdMob 廣告</h2>
-        <p>本應用程式整合了 Google AdMob。</p>
-        <div class="flex-row">
-            <div class="flex-label">・觸發機制：</div>
-            <div class="flex-text">只有當您主動點擊或同意觀看時，才會載入並顯示廣告。</div>
-        </div>
-        <div class="flex-row">
-            <div class="flex-label">・資料處理：</div>
-            <div class="flex-text">AdMob 可能會收集您的廣告 ID 以進行頻率控制或匿名分析。</div>
+            <div class="flex-label">・Service Optimization:</div>
+            <div class="flex-text">To help us provide, maintain, and continuously improve the App's compatibility and functionality.</div>
         </div>
 
-        <h2>5. 帳號與資料刪除（重要聲明）</h2>
-        <p>我們賦予您對個人資料的完全控制權：</p>
+        <h2>4. Third-Party Services: AdMob</h2>
+        <p>The App integrates Google AdMob for advertisements.</p>
         <div class="flex-row">
-            <div class="flex-label">・刪除路徑：</div>
-            <div class="flex-text">您可以隨時透過 App 內右上角的 <span class="highlight">「設定」->「刪除帳號」</span> 執行刪除動作。</div>
+            <div class="flex-label">・Trigger Mechanism:</div>
+            <div class="flex-text">Ads are only loaded and displayed when you actively click or agree to view them.</div>
         </div>
         <div class="flex-row">
-            <div class="flex-label">・後果說明：</div>
-            <div class="flex-text"><span class="highlight">請注意</span>，一旦您確認刪除帳號，即便未來再次安裝本應用程式，系統仍會識別該設備曾有使用記錄，您將無法再次享有「新使用者」的專屬福利或優惠。</div>
+            <div class="flex-label">・Data Processing:</div>
+            <div class="flex-text">AdMob may collect your Advertising ID for frequency capping or anonymous analytics.</div>
         </div>
 
-        <h2>6. 政策更新與公告</h2>
-        <p>當本隱私權政策或 App 版本有更新時，我們會透過 App 內的<span class="highlight">「公告天下」</span>功能向您發佈通知。</p>
-
-        <h2>7. 聯繫我們</h2>
-        <p>若您對本政策有任何疑問，可透過以下管道反應：</p>
+        <h2>5. Account & Data Deletion</h2>
+        <p>We give you full control over your personal data:</p>
         <div class="flex-row">
-            <div class="flex-label">・App 內功能：</div>
-            <div class="flex-text">透過 App 內的<span class="highlight">「連絡我們」</span>功能。</div>
+            <div class="flex-label">・Deletion Path:</div>
+            <div class="flex-text">You can delete your account at any time via <span class="highlight">Settings -> Delete Account</span> in the upper right corner of the App.</div>
         </div>
         <div class="flex-row">
-            <div class="flex-label">・電子郵件：</div>
-            <div class="flex-text">前往 <span class="highlight">「設定」->「關於開發團隊」</span> 取得連絡方式。</div>
+            <div class="flex-label">・Consequences:</div>
+            <div class="flex-text"><span class="highlight">Note:</span> Once deleted, the system will still recognize that the device has previously used the App. You will not be eligible for "New User" benefits or promotions if you reinstall in the future.</div>
+        </div>
+
+        <h2>6. Policy Updates</h2>
+        <p>When there are updates to this policy or the App version, we will notify you through the <span class="highlight">"System Announcements"</span> feature within the App.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions regarding this policy, please reach out via:</p>
+        <div class="flex-row">
+            <div class="flex-label">・In-App Support:</div>
+            <div class="flex-text">Use the <span class="highlight">"Contact Us"</span> feature within the App.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Email:</div>
+            <div class="flex-text">Find our contact details under <span class="highlight">Settings -> About Developer Team</span>.</div>
         </div>
     </div>
 
