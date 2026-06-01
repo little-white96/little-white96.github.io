@@ -3,33 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - Política de Privacidade</title>
+    <title>Easy English - Política de Privacidade</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 170px; }
-        .highlight { font-weight: bold; color: #d35400; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* Título e Data: Centralizados */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* Container do Conteúdo Principal */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo de Alinhamento Chave: Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* Evita que o título seja compactado */
+            font-weight: bold;
+            white-space: nowrap;  /* Garante que o título não quebre linha */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* Ajuste fino da distância após os dois pontos */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* Ajuste de padding-left para alinhar com o início do texto acima */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* Otimização para Dispositivos Móveis */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* Em telas muito pequenas, pode-se voltar para block se necessário, mas a configuração atual mantém um bom alinhamento */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English</h1>
         <h1>Política de Privacidade</h1>
-        <p>Última atualização: 18 de março de 2026</p>
+        <p class="update-date">Última atualização: 18 de março de 2026</p>
     </div>
+
     <div class="main-content">
         <h2>1. Introdução</h2>
-        <p>Bem-vindo ao eLearning Easy English. Esta política explica como protegemos sua privacidade.</p>
-        <h2>2. Dados Coletados</h2>
+        <p>Bem-vindo ao Easy English (doravante denominado "este Aplicativo"). Esta política visa explicar como tratamos as suas informações pessoais, garantindo a segurança dos seus dados e a sua privacidade durante o uso.</p>
+
+        <h2>2. Dados que Coletamos</h2>
+        <p>Coletamos apenas os dados mínimos necessários para a realização das funcionalidades do aplicativo:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・Identificação:</div>
-            <div>Coletamos seu <span class="highlight">"Nome ou Apelido"</span> para personalizar sua experiência no app.</div>
+            <div class="flex-label">・Informações de Identificação Pessoal:</div>
+            <div class="flex-text">Para fins de personalização dentro do App, coletamos o <span class="highlight">"nome ou apelido"</span> que você insere ativamente. Você está livre para escolher entre usar seu nome real ou um apelido.</div>
         </div>
-        <h2>3. Exclusão</h2>
-        <p>Você pode excluir sua conta em <span class="highlight">Configurações -> Excluir conta</span>.</p>
+
+        <div class="flex-row">
+            <div class="flex-label">・Informações do Dispositivo e Técnicas:</div>
+            <div class="flex-text">
+                Para manter o funcionamento do sistema, coletamos automaticamente os seguintes itens:
+                <div class="sub-info">
+                    ・Identificador do dispositivo: como Android ID (Android) ou IDFV (iOS).<br>
+                    ・Configurações do sistema: idioma do sistema, tipo de plataforma, versão do App e tamanho da tela.
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Finalidade do Uso dos Dados</h2>
+        <div class="flex-row">
+            <div class="flex-label">・Identificação do Usuário:</div>
+            <div class="flex-text">Verificação através do identificador do dispositivo para checar se trata-se do mesmo aparelho, permitindo distinguir entre novos e antigos usuários e garantir que suas configurações e progresso sejam vinculados corretamente.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Otimização do Serviço:</div>
+            <div class="flex-text">Ajuda-nos a fornecer, manter e melhorar continuamente a compatibilidade e a experiência das funcionalidades do App.</div>
+        </div>
+
+        <h2>4. Serviços de Terceiros: Anúncios AdMob</h2>
+        <p>Este aplicativo integra o Google AdMob.</p>
+        <div class="flex-row">
+            <div class="flex-label">・Mecanismo de Ativação:</div>
+            <div class="flex-text">Os anúncios são carregados e exibidos apenas quando você clica ativamente ou consente em assisti-los.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Processamento de Dados:</div>
+            <div class="flex-text">O AdMob pode coletar o seu ID de publicidade (Advertising ID) para controle de frequência de exibição ou análises anônimas.</div>
+        </div>
+
+        <h2>5. Exclusão de Conta e Dados (Declaração Importante)</h2>
+        <p>Concedemos a você total controle sobre os seus dados pessoais:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Caminho para Exclusão:</div>
+            <div class="flex-text">Você pode solicitar a exclusão a qualquer momento acessando <span class="highlight">"Configurações" -> "Excluir Conta"</span> no canto superior direito do App.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Explicação dos Efeitos:</div>
+            <div class="flex-text"><span class="highlight">Atenção</span>: assim que você confirmar a exclusão da conta, mesmo que venha a reinstalar este aplicativo no futuro, o sistema ainda identificará que o dispositivo possui um histórico de uso anterior. Portanto, você não poderá usufruir novamente dos benefícios ou ofertas exclusivas para "novos usuários".</div>
+        </div>
+
+        <h2>6. Atualizações da Política e Avisos</h2>
+        <p>Quando houver atualizações nesta política de privacidade ou na versão do App, nós emitiremos uma notificação para você por meio da função de <span class="highlight">"Anúncios"</span> dentro do aplicativo.</p>
+
+        <h2>7. Contato</h2>
+        <p>Se você tiver qualquer dúvida sobre esta política, pode entrar em contato conosco através dos seguintes canais:</p>
+        <div class="flex-row">
+            <div class="flex-label">--- Função interna do App:</div>
+            <div class="flex-text">Através da função <span class="highlight">"Fale Conosco"</span> dentro do aplicativo.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">--- E-mail:</div>
+            <div class="flex-text">Acesse <span class="highlight">"Configurações" -> "Sobre a Equipe de Desenvolvimento"</span> para obter as informações de contato.</div>
+        </div>
     </div>
+
 </body>
 </html>
