@@ -3,33 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - Dasar Privasi</title>
+    <title>Easy English - Dasar Privasi</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 170px; }
-        .highlight { font-weight: bold; color: #d35400; }
+        body {
+            font-family: "Microsoft JhengHei", "PingFang TC", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* 標題與日期：置中 */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* 內容區塊容器 */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* 關鍵對齊樣式：Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* 防止標題被壓縮 */
+            font-weight: bold;
+            white-space: nowrap;  /* 確保標題不換行 */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* 微調與冒號的距離 */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* 調整 padding-left 數值，使其對齊上方文字開頭 */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* 手機版優化 */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* 在極小螢幕下可視情況改回 block，但目前設定能維持對齊 */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English</h1>
         <h1>Dasar Privasi</h1>
-        <p>Kemas kini terakhir: 18 Mac 2026</p>
+        <p class="update-date">Tarikh Kemas Kini Terakhir: 18 Mac 2026</p>
     </div>
+
     <div class="main-content">
         <h2>1. Pengenalan</h2>
-        <p>Selamat datang ke eLearning Easy English. Dasar ini menjelaskan pengurusan maklumat peribadi anda.</p>
-        <h2>2. Pengumpulan Data</h2>
+        <p>Selamat datang ke Easy English (selepas ini dirujuk sebagai "Aplikasi ini"). Dasar ini bertujuan untuk menjelaskan cara kami mengendalikan maklumat peribadi anda bagi memastikan keselamatan data dan privasi anda sepanjang penggunaan aplikasi ini.</p>
+
+        <h2>2. Maklumat yang Kami Kumpulkan</h2>
+        <p>Kami hanya mengumpulkan maklumat minimum yang diperlukan untuk menjalankan fungsi aplikasi:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・Identiti:</div>
-            <div>Kami mengumpul <span class="highlight">"Nama atau Nama Samaran"</span> untuk tujuan pemperibadian.</div>
+            <div class="flex-label">・Maklumat Pengenalan Peribadi:</div>
+            <div class="flex-text">Untuk paparan peribadi dalam Aplikasi, kami mengumpulkan <span class="highlight">"nama atau nama samaran"</span> yang anda masukkan secara aktif. Anda bebas memilih untuk menggunakan nama sebenar atau nama samaran.</div>
         </div>
-        <h2>3. Pemadaman</h2>
-        <p>Anda boleh memadam akaun melalui <span class="highlight">Tetapan -> Padam Akaun</span>.</p>
+
+        <div class="flex-row">
+            <div class="flex-label">・Maklumat Peranti dan Teknikal:</div>
+            <div class="flex-text">
+                Untuk mengekalkan operasi sistem, kami akan mengumpulkan maklumat berikut secara automatik:
+                <div class="sub-info">
+                    ・Pengenal Peranti: Seperti Android ID (Android) atau IDFV (iOS).<br>
+                    ・Tetapan Sistem: Bahasa sistem, jenis platform, versi Aplikasi, dan saiz skrin.
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Tujuan Penggunaan Data</h2>
+        <div class="flex-row">
+            <div class="flex-label">・Pengenalan Pengguna:</div>
+            <div class="flex-text">Memeriksa sama ada ia adalah peranti yang sama melalui pengenal peranti untuk menentukan pengguna baharu atau sedia ada, bagi memastikan tetapan dan kemajuan anda disambungkan dengan betul.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Pengoptimuman Perkhidmatan:</div>
+            <div class="flex-text">Membantu kami menyediakan, mengekalkan, dan sentiasa menambah baik keserasian serta pengalaman fungsi Aplikasi.</div>
+        </div>
+
+        <h2>4. Perkhidmatan Pihak Ketiga: Iklan AdMob</h2>
+        <p>Aplikasi ini menyepadukan Google AdMob.</p>
+        <div class="flex-row">
+            <div class="flex-label">・Mekanisme Cetusan:</div>
+            <div class="flex-text">Iklan hanya akan dimuatkan dan dipaparkan apabila anda mengklik secara aktif atau bersetuju untuk menontonnya.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Pemprosesan Data:</div>
+            <div class="flex-text">AdMob mungkin mengumpulkan ID iklan anda untuk kawalan kekerapan atau analisis tanpa nama (anonim).</div>
+        </div>
+
+        <h2>5. Pemadaman Akaun dan Data (Kenyataan Penting)</h2>
+        <p>Kami memberikan anda kawalan penuh ke atas data peribadi anda:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Laluan Pemadaman:</div>
+            <div class="flex-text">Anda boleh melakukan pemadaman pada bila-bila masa melalui bahagian <span class="highlight">"Tetapan" (Settings) -> "Padam Akaun" (Delete Account)</span> di sudut kanan atas dalam Aplikasi.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Penjelasan Kesan:</div>
+            <div class="flex-text"><span class="highlight">Sila ambil perhatian</span>, sebaik sahaja anda mengesahkan pemadaman akaun, walaupun anda memasang semula Aplikasi ini pada masa hadapan, sistem akan tetap mengecam bahawa peranti tersebut mempunyai rekod penggunaan terdahulu. Anda tidak akan dapat menikmati faedah atau tawaran eksklusif sebagai "Pengguna Baharu" sekali lagi.</div>
+        </div>
+
+        <h2>6. Kemas Kini Dasar dan Pengumuman</h2>
+        <p>Apabila terdapat kemas kini pada dasar privasi ini atau versi Aplikasi, kami akan menghantar pemberitahuan kepada anda melalui fungsi <span class="highlight">"Pengumuman" (Announcement)</span> dalam Aplikasi.</p>
+
+        <h2>7. Hubungi Kami</h2>
+        <p>Jika anda mempunyai sebarang pertanyaan mengenai dasar ini, anda boleh menghubungi kami melalui saluran berikut:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Fungsi dalam Aplikasi:</div>
+            <div class="flex-text">Melalui fungsi <span class="highlight">"Hubungi Kami" (Contact Us)</span> di dalam Aplikasi.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・E-mel:</div>
+            <div class="flex-text">Sila ke <span class="highlight">"Tetapan" (Settings) -> "Mengenai Pasukan Pembangun" (About Developer Team)</span> untuk mendapatkan maklumat hubungan.</div>
+        </div>
     </div>
+
 </body>
 </html>
