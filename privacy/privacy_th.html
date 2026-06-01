@@ -3,33 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - นโยบายความเป็นส่วนตัว</title>
+    <title>Easy English - เก่งอังกฤษง่ายๆ นโยบายความเป็นส่วนตัว</title>
     <style>
-        body { font-family: "Sarabun", sans-serif; line-height: 2.0; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 160px; color: #34495e; }
-        .highlight { font-weight: bold; color: #d35400; }
+        body {
+            font-family: "Sarabun", "Leelawadee", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* หัวข้อและวันที่: จัดกึ่งกลาง */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* กล่องเนื้อหาหลัก */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* สไตล์การจัดตำแหน่งที่สำคัญ: Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* ป้องกันหัวข้อถูกบีบ */
+            font-weight: bold;
+            white-space: nowrap;  /* ข้อมูลหัวข้อไม่ขึ้นบรรทัดใหม่ */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* ปรับระยะห่างหลังเครื่องหมายโคลอน */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* ปรับให้ข้อความย่อยจัดตรงกับข้อความเริ่มต้นด้านบน */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* การปรับแต่งสำหรับเวอร์ชันมือถือ */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* บนหน้าจอขนาดเล็กมาก สามารถเปลี่ยนกลับเป็น block ได้ตามความเหมาะสม แต่ค่าปัจจุบันยังคงรักษาการจัดตำแหน่งที่ดีไว้ได้ */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English - เก่งอังกฤษง่ายๆ</h1>
         <h1>นโยบายความเป็นส่วนตัว</h1>
-        <p>อัปเดตล่าสุด: 18 มีนาคม 2026</p>
+        <p class="update-date">อัปเดตล่าสุด: 18 มีนาคม 2026</p>
     </div>
+
     <div class="main-content">
         <h2>1. บทนำ</h2>
-        <p>ยินดีต้อนรับสู่ eLearning Easy English นโยบายนี้อธิบายวิธีที่เราจัดการข้อมูลส่วนบุคคลของคุณ</p>
-        <h2>2. การเก็บรวบรวมข้อมูล</h2>
+        <p>ยินดีต้อนรับสู่ Easy English - เก่งอังกฤษง่ายๆ (ซึ่งต่อไปนี้จะเรียกว่า "แอปพลิเคชันนี้") นโยบายนี้มีขึ้นเพื่ออธิบายวิธีที่เราจัดการกับข้อมูลส่วนบุคคลของคุณ เพื่อให้มั่นใจในความปลอดภัยของข้อมูลและความเป็นส่วนตัวของคุณในระหว่างการใช้งาน</p>
+
+        <h2>2. ข้อมูลที่เราจัดเก็บ</h2>
+        <p>เราจัดเก็บข้อมูลเฉพาะเท่าที่จำเป็นเพื่อสอดคล้องกับการทำงานของแอปพลิเคชันเท่านั้น:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・ข้อมูลระบุตัวตน:</div>
-            <div>เราเก็บรวบรวม <span class="highlight">"ชื่อหรือชื่อเล่น"</span> เพื่อปรับแต่งประสบการณ์การใช้งาน</div>
+            <div class="flex-label">・ข้อมูลระบุตัวตนบุคคล:</div>
+            <div class="flex-text">เพื่อการแสดงผลแบบเฉพาะบุคคลภายในแอป เราจะจัดเก็บข้อมูล <span class="highlight">"ชื่อหรือชื่อเล่น"</span> ที่คุณกรอกเข้ามาด้วยตนเอง คุณสามารถเลือกใช้ชื่อจริงหรือชื่อเล่นได้อย่างอิสระ</div>
         </div>
-        <h2>3. การลบข้อมูล</h2>
-        <p>คุณสามารถลบข้อมูลผ่าน <span class="highlight">การตั้งค่า -> ลบบัญชี</span> ได้ตลอดเวลา</p>
+
+        <div class="flex-row">
+            <div class="flex-label">・ข้อมูลอุปกรณ์และข้อมูลทางเทคนิค:</div>
+            <div class="flex-text">
+                เพื่อรักษาการทำงานของระบบ เราจะจัดเก็บข้อมูลต่อไปนี้โดยอัตโนมัติ:
+                <div class="sub-info">
+                    ・หมายเลขระบุอุปกรณ์: เช่น Android ID (สำหรับ Android) หรือ IDFV (สำหรับ iOS)<br>
+                    ・การตั้งค่าระบบ: ภาษาของระบบ, ประเภทแพลตฟอร์ม, เวอร์ชันของแอป, ขนาดหน้าจอ
+                </div>
+            </div>
+        </div>
+
+        <h2>3. วัตถุประสงค์ในการใช้ข้อมูล</h2>
+        <div class="flex-row">
+            <div class="flex-label">・การระบุตัวตนผู้ใช้:</div>
+            <div class="flex-text">ตรวจสอบว่าเป็นอุปกรณ์เครื่องเดิมหรือไม่ผ่านหมายเลขระบุอุปกรณ์ เพื่อใช้ในการแยกแยะผู้ใช้เก่าและผู้ใช้ใหม่ และเพื่อให้มั่นใจว่าการตั้งค่ารวมถึงความคืบหน้าของคุณจะถูกเชื่อมโยงอย่างถูกต้อง</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・การเพิ่มประสิทธิภาพการบริการ:</div>
+            <div class="flex-text">ช่วยให้เราสามารถจัดหา รักษา และปรับปรุงความเข้ากันได้ของระบบรวมถึงประสบการณ์การใช้งานฟังก์ชันต่างๆ ของแอปได้อย่างต่อเนื่อง</div>
+        </div>
+
+        <h2>4. บริการจากบุคคลที่สาม: โฆษณา AdMob</h2>
+        <p>แอปพลิเคชันนี้มีการผสานรวม Google AdMob</p>
+        <div class="flex-row">
+            <div class="flex-label">・กลไกการทำงาน:</div>
+            <div class="flex-text">โฆษณาจะถูกโหลดและแสดงผลก็ต่อเมื่อคุณคลิกหรือยินยอมที่จะรับชมด้วยตนเองเท่านั้น</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・การประมวลผลข้อมูล:</div>
+            <div class="flex-text">AdMob อาจจัดเก็บรหัสโฆษณา (Advertising ID) ของคุณเพื่อใช้ในการควบคุมความถี่ของการแสดงโฆษณา หรือเพื่อการวิเคราะห์ในรูปแบบที่ไม่ระบุตัวตน</div>
+        </div>
+
+        <h2>5. การลบบัญชีและข้อมูล (ข้อชี้แจงสำคัญ)</h2>
+        <p>เรามอบสิทธิ์ให้คุณควบคุมข้อมูลส่วนบุคคลของคุณได้อย่างเต็มที่:</p>
+        <div class="flex-row">
+            <div class="flex-label">・ขั้นตอนการลบข้อมูล:</div>
+            <div class="flex-text">คุณสามารถสั่งลบข้อมูลได้ตลอดเวลา โดยไปที่เมนู <span class="highlight">"การตั้งค่า" -> "ลบบัญชี"</span> บริเวณมุมขวาบนของแอป</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・ผลกระทบหลังการลบข้อมูล:</div>
+            <div class="flex-text"><span class="highlight">โปรดทราบว่า</span> เมื่อคุณยืนยันการลบบัญชีแล้ว แม้ว่าในอนาคตคุณจะติดตั้งแอปพลิเคชันนี้ใหม่อีกครั้ง ระบบก็ยังคงตรวจพบว่าอุปกรณ์นี้เคยมีประวัติการใช้งานมาก่อน ส่งผลให้คุณจะไม่สามารถรับสิทธิประโยชน์หรือข้อเสนอพิเศษสำหรับ "ผู้ใช้ใหม่" ได้อีก</div>
+        </div>
+
+        <h2>6. การอัปเดตนโยบายและการประกาศ</h2>
+        <p>เมื่อมีการอัปเดตนโยบายความเป็นส่วนตัวนี้หรือมีการอัปเดตเวอร์ชันของแอปเราจะส่งการแจ้งเตือนให้คุณทราบผ่านฟังก์ชัน <span class="highlight">"ประกาศจากแอป"</span> ภายในตัวแอปพลิเคชัน</p>
+
+        <h2>7. ติดต่อเรา</h2>
+        <p>หากคุณมีข้อสงสัยใดๆ เกี่ยวกับนโยบายนี้ คุณสามารถติดต่อเราผ่านช่องทางต่อไปนี้:</p>
+        <div class="flex-row">
+            <div class="flex-label">・ฟังก์ชันภายในแอป:</div>
+            <div class="flex-text">ติดต่อผ่านฟังก์ชัน <span class="highlight">"ติดต่อเรา"</span> ภายในแอปพลิเคชัน</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・อีเมล:</div>
+            <div class="flex-text">ไปที่เมนู <span class="highlight">"การตั้งค่า" -> "เกี่ยวกับทีมพัฒนา"</span> เพื่อรับข้อมูลการติดต่อ</div>
+        </div>
     </div>
+
 </body>
 </html>
