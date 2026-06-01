@@ -3,39 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - Informativa sulla Privacy</title>
+    <title>Easy English - Informativa sulla Privacy</title>
     <style>
-        body { font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
-        h1 { color: #2c3e50; font-size: 1.8em; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; margin-top: 35px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 180px; color: #34495e; }
-        .highlight { font-weight: bold; color: #d35400; }
-        @media (max-width: 600px) { .flex-row { flex-direction: column; } }
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* 標題與日期：置中 */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* 內容區塊容器 */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* 關鍵對齊樣式：Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* 防止標題被壓縮 */
+            font-weight: bold;
+            white-space: nowrap;  /* 確保標題不換行 */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* 微調與冒號的距離 */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* 調整 padding-left 數值，使其對齊上方文字開頭 */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* 手機版優化 */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* 在極小螢幕下可視情況改回 block，但目前設定能維持對齊 */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English</h1>
         <h1>Informativa sulla Privacy</h1>
-        <p>Ultimo aggiornamento: 18 marzo 2026</p>
+        <p class="update-date">Ultimo aggiornamento: 18 marzo 2026</p>
     </div>
+
     <div class="main-content">
         <h2>1. Introduzione</h2>
-        <p>Benvenuto su eLearning Easy English. Questa informativa spiega come gestiamo i tuoi dati personali.</p>
-        <h2>2. Raccolta dati</h2>
+        <p>Benvenuto in Easy English (di seguito denominata "l'Applicazione"). La presente informativa ha lo scopo di spiegare come gestiamo le tue informazioni personali, garantendo la sicurezza dei tuoi dati e la tua privacy durante l'uso del servizio.</p>
+
+        <h2>2. Dati raccolti</h2>
+        <p>Raccogliamo solo i dati minimi ed essenziali per il corretto funzionamento dell'applicazione:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・Identificazione:</div>
-            <div>Raccogliamo il <span class="highlight">"Nome o Nickname"</span> inserito per personalizzare l'interfaccia.</div>
+            <div class="flex-label">・Informazioni di identificazione personale:</div>
+            <div class="flex-text">Per personalizzare l'interfaccia dell'App, raccogliamo il <span class="highlight">"nome o nickname"</span> inserito volontariamente dall'utente. Sei libero di scegliere se utilizzare il tuo nome reale o uno pseudonimo.</div>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-label">・Informazioni sul dispositivo e tecniche:</div>
+            <div class="flex-text">
+                Per garantire il corretto funzionamento del sistema, raccogliamo automaticamente i seguenti dati:
+                <div class="sub-info">
+                    ・Identificatore del dispositivo: ad esempio Android ID (Android) o IDFV (iOS).<br>
+                    ・Impostazioni di sistema: lingua di sistema, tipo di piattaforma, versione dell'App e dimensioni dello schermo.
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Finalità del trattamento dei dati</h2>
+        <div class="flex-row">
+            <div class="flex-label">・Identificazione dell'utente:</div>
+            <div class="flex-text">Verifichiamo se si tratta dello stesso dispositivo tramite l'identificatore del device per distinguere tra nuovi e vecchi utenti, assicurando che le tue impostazioni e i tuoi progressi di apprendimento siano collegati correttamente.</div>
         </div>
         <div class="flex-row">
-            <div class="flex-label">・Info Tecniche:</div>
-            <div>Raccolta automatica di ID dispositivo (Android ID/IDFV), lingua e versione app.</div>
+            <div class="flex-label">・Ottimizzazione del servizio:</div>
+            <div class="flex-text">Ci aiuta a fornire, mantenere e migliorare costantemente la compatibilità e l'esperienza d'uso dell'App.</div>
         </div>
-        <h2>3. Cancellazione</h2>
-        <p>Puoi eliminare i tuoi dati in qualsiasi momento tramite <span class="highlight">Impostazioni -> Elimina account</span>.</p>
+
+        <h2>4. Servizi di terze parti: Annunci AdMob</h2>
+        <p>Questa applicazione integra Google AdMob.</p>
+        <div class="flex-row">
+            <div class="flex-label">・Meccanismo di attivazione:</div>
+            <div class="flex-text">Gli annunci verranno caricati e mostrati solo quando clicchi attivamente o acconsenti alla loro visualizzazione.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Trattamento dei dati:</div>
+            <div class="flex-text">AdMob potrebbe raccogliere il tuo ID pubblicitario per il controllo della frequenza degli annunci o per analisi anonime.</div>
+        </div>
+
+        <h2>5. Eliminazione dell'account e dei dati (Nota Importante)</h2>
+        <p>Ti garantiamo il pieno controllo sui tuoi dati personali:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Procedura di eliminazione:</div>
+            <div class="flex-text">Puoi richiedere l'eliminazione in qualsiasi momento tramite il percorso <span class="highlight">"Impostazioni" (Settings) -> "Elimina Account" (Delete Account)</span> situato in alto a destra nell'App.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Conseguenze dell'eliminazione:</div>
+            <div class="flex-text"><span class="highlight">Nota bene</span>: una volta confermata l'eliminazione dell'account, anche se reinstallerai l'applicazione in futuro, il sistema riconoscerà comunque che il dispositivo ha una cronologia di utilizzo precedente. Di conseguenza, non potrai più usufruire dei vantaggi o delle promozioni esclusive riservate ai "Nuovi Utenti".</div>
+        </div>
+
+        <h2>6. Aggiornamenti dell'informativa e comunicazioni</h2>
+        <p>In caso di aggiornamenti alla presente informativa sulla privacy o alla versione dell'App, ti invieremo una notifica tramite la funzione <span class="highlight">"Annunci" (Announcements)</span> all'interno dell'applicazione.</p>
+
+        <h2>7. Contatti</h2>
+        <p>Se hai domande sulla presente informativa, puoi contattarci tramite i seguenti canali:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Funzionalità in-App:</div>
+            <div class="flex-text">Tramite la funzione <span class="highlight">"Contattaci" (Contact Us)</span> interna all'App.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・E-mail:</div>
+            <div class="flex-text">Vai su <span class="highlight">"Impostazioni" (Settings) -> "Informazioni sul team di sviluppo" (About Developer Team)</span> per ottenere i dettagli di contatto.</div>
+        </div>
     </div>
+
 </body>
 </html>
