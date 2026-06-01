@@ -3,33 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - سياسة الخصوصية</title>
+    <title>Easy English - سياسة الخصوصية لـ "تعلم الإنجليزية بسهولة"</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; direction: rtl; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; text-align: right; }
-        h2 { color: #2980b9; border-right: 5px solid #2980b9; padding-right: 15px; margin-top: 35px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 150px; color: #34495e; }
-        .highlight { font-weight: bold; color: #d35400; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* العنوان والتاريخ: ممركز */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* حاوية محتوى القسم الرئيسي */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: right; /* محاذاة النص لليمين للغة العربية */
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-right: 5px solid #2980b9; /* تم التعديل لليمين */
+            padding-right: 15px; /* تم التعديل لليمين */
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* أسلوب المحاذاة الرئيسي: Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* يمنع انضغاط العنوان */
+            font-weight: bold;
+            white-space: nowrap;  /* يضمن عدم انقسام العنوان إلى سطرين */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-right: 2px;    /* ضبط المسافة بعد النقطتين */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            padding-right: 0; 
+            margin-right: 0;
+            display: block;
+        }
+
+        /* تحسينات نسخة الهاتف */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* يمكن التغيير إلى block في الشاشات الصغيرة جداً حسب الحاجة */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English - تعلم الإنجليزية بسهولة</h1>
         <h1>سياسة الخصوصية</h1>
-        <p>آخر تحديث: 18 مارس 2026</p>
+        <p class="update-date">آخر تحديث: 18 مارس 2026</p>
     </div>
+
     <div class="main-content">
         <h2>1. مقدمة</h2>
-        <p>مرحباً بكم في eLearning Easy English. توضح هذه السياسة كيفية التعامل مع معلوماتكم الشخصية.</p>
-        <h2>2. جمع البيانات</h2>
+        <p>مرحباً بكم في Easy English - تعلم الإنجليزية بسهولة (المشار إليه فيما يلي باسم "التطبيق"). تهدف هذه السياسة إلى توضيح كيفية تعاملنا مع معلوماتك الشخصية لضمان أمن بياناتك وخصوصيتك أثناء استخدام التطبيق.</p>
+
+        <h2>2. البيانات التي نجمعها</h2>
+        <p>نحن نجمع فقط الحد الأدنى من البيانات اللازمة لتشغيل وظائف التطبيق:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・الهوية:</div>
-            <div>نجمع <span class="highlight">"الاسم أو اللقب"</span> الذي تدخله لتخصيص تجربة التطبيق.</div>
+            <div class="flex-label">・معلومات الهوية الشخصية:</div>
+            <div class="flex-text">من أجل عرض تجربة مخصصة داخل التطبيق، نقوم بجمع <span class="highlight">"الاسم أو اللقب"</span> الذي تقوم بإدخاله طواعية. يمكنك اختيار استخدام اسمك الحقيقي أو اسم مستعار بحرية.</div>
         </div>
-        <h2>3. حذف البيانات</h2>
-        <p>يمكنك حذف حسابك عبر <span class="highlight">الإعدادات -> حذف الحساب</span> في أي وقت.</p>
+
+        <div class="flex-row">
+            <div class="flex-label">・معلومات الجهاز والمعلومات التقنية:</div>
+            <div class="flex-text">
+                من أجل الحفاظ على تشغيل النظام، نقوم تلقائياً بجمع العناصر التالية:
+                <div class="sub-info">
+                    ・معرّف الجهاز: مثل Android ID لنظام (Android) أو IDFV لنظام (iOS).<br>
+                    ・إعدادات النظام: لغة النظام، نوع المنصة، إصدار التطبيق، وحجم الشاشة.
+                </div>
+            </div>
+        </div>
+
+        <h2>3. الغرض من استخدام البيانات</h2>
+        <div class="flex-row">
+            <div class="flex-label">・التعرف على المستخدم:</div>
+            <div class="flex-text">التحقق مما إذا كان الجهاز هو نفسه من خلال معرف الجهاز للتمييز بين المستخدمين الجدد والحاليين، ولضمان ربط إعداداتك وتقدمك بشكل صحيح.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・تحسين الخدمة:</div>
+            <div class="flex-text">مساعدتنا في تقديم، صيانة، وتحسين توافق التطبيق وتجربة وظائفه بشكل مستمر.</div>
+        </div>
+
+        <h2>4. خدمات الطرف الثالث: إعلانات AdMob</h2>
+        <p>هذا التطبيق مدمج مع Google AdMob.</p>
+        <div class="flex-row">
+            <div class="flex-label">・آلية التفعيل:</div>
+            <div class="flex-text">يتم تحميل الإعلانات وعرضها فقط عندما تقوم بالنقر عليها طواعية أو توافق على مشاهدتها.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・معالجة البيانات:</div>
+            <div class="flex-text">قد تقوم AdMob بجمع معرف الإعلانات الخاص بك للتحكم في تكرار ظهور الإعلانات أو لإجراء تحليلات مجهولة المصدر.</div>
+        </div>
+
+        <h2>5. حذف الحساب والبيانات (بيان هام)</h2>
+        <p>نحن نمنحك السيطرة الكاملة على بياناتك الشخصية:</p>
+        <div class="flex-row">
+            <div class="flex-label">・مسار الحذف:</div>
+            <div class="flex-text">يمكنك حذف حسابك في أي وقت عبر الانتقال إلى <span class="highlight">"الإعدادات" -> "حذف الحساب"</span> في الزاوية العلوية اليمنى من التطبيق.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・توضيح العواقب:</div>
+            <div class="flex-text"><span class="highlight">يرجى الانتباه</span>، بمجرد تأكيد حذف الحساب، حتى لو قمت بإعادة تثبيت التطبيق مستقبلاً، سيتعرف النظام على أن هذا الجهاز يمتلك سِجل استخدام سابق، ولن تتمكن من الاستمتاع بالمزايا أو العروض الحصرية المخصصة لـ "المستخدمين الجدد" مرة أخرى.</div>
+        </div>
+
+        <h2>6. تحديثات السياسة والإعلانات</h2>
+        <p>عند تحديث سياسة الخصوصية هذه أو إصدار التطبيق، سنقوم بإرسال إشعار إليك عبر ميزة <span class="highlight">"الإعلانات العامة"</span> داخل التطبيق.</p>
+
+        <h2>7. اتصل بنا</h2>
+        <p>إذا كان لديك أي استفسارات بشأن هذه السياسة، يمكنك التواصل معنا عبر القنوات التالية:</p>
+        <div class="flex-row">
+            <div class="flex-label">・الميزات داخل التطبيق:</div>
+            <div class="flex-text">من خلال ميزة <span class="highlight">"اتصل بنا"</span> المتاحة داخل التطبيق.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・البريد الإلكتروني:</div>
+            <div class="flex-text">انتقل إلى <span class="highlight">"الإعدادات" -> "حول فريق التطوير"</span> للحصول على معلومات الاتصال.</div>
+        </div>
     </div>
+
 </body>
 </html>
