@@ -3,33 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - Gizlilik Politikası</title>
+    <title>Easy English - Kolayca İngilizce Öğrenin Gizlilik Politikası</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 170px; }
-        .highlight { font-weight: bold; color: #d35400; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* Başlık ve Tarih: Ortalanmış */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* İçerik Bölümü Konteyneri */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* Kritik Hizalama Stili: Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* Başlığın sıkışmasını önler */
+            font-weight: bold;
+            white-space: nowrap;  /* Başlığın alt satıra geçmesini önler */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* İki nokta üst üste mesafesini ince ayarlar */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* Üstteki metnin başlangıcıyla hizalamak için sol boşluğu ayarlar */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* Mobil Sürüm Optimizasyonu */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* Çok küçük ekranlarda duruma göre tekrar block yapılabilir, ancak mevcut ayar hizalamayı korur */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English - Kolayca İngilizce Öğrenin</h1>
         <h1>Gizlilik Politikası</h1>
-        <p>Son güncelleme: 18 Mart 2026</p>
+        <p class="update-date">Son Güncelleme Tarihi: 18 Mart 2026</p>
     </div>
+
     <div class="main-content">
         <h2>1. Giriş</h2>
-        <p>eLearning Easy English'e hoş geldiniz. Bu politika, verilerinizi nasıl yönettiğimizi açıklar.</p>
-        <h2>2. Veri Toplama</h2>
+        <p>Easy English - Kolayca İngilizce Öğrenin (bundan sonra "Bu Uygulama" olarak anılacaktır) uygulamasına hoş geldiniz. Bu politika, kullanım sürecindeki veri güvenliğinizi ve gizliliğinizi sağlamak amacıyla kişisel bilgilerinizi nasıl işlediğimizi açıklamayı amaçlamaktadır.</p>
+
+        <h2>2. Topladığımız Veriler</h2>
+        <p>Yalnızca işlevlerin gerçekleştirilmesi için gerekli olan asgari düzeyde veri topluyoruz:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・Kimlik:</div>
-            <div>Kişiselleştirme için girdiğiniz <span class="highlight">"Ad veya Takma Ad"</span> bilgisini topluyoruz.</div>
+            <div class="flex-label">・Kişisel Kimlik Bilgileri:</div>
+            <div class="flex-text">Uygulama içinde kişiselleştirilmiş bir görünüm sağlamak amacıyla, kendi isteğinizle girdiğiniz <span class="highlight">"Ad veya Takma Ad"</span> bilgisini topluyoruz. Gerçek adınızı veya bir takma adı kullanmakta özgürsünüz.</div>
         </div>
-        <h2>3. Silme</h2>
-        <p>Verilerinizi <span class="highlight">Ayarlar -> Hesabı Sil</span> yoluyla istediğiniz zaman silebilirsiniz.</p>
+
+        <div class="flex-row">
+            <div class="flex-label">・Cihaz ve Teknik Bilgiler:</div>
+            <div class="flex-text">
+                Sistemin çalışmasını sürdürmek amacıyla aşağıdaki öğeleri otomatik olarak topluyoruz:
+                <div class="sub-info">
+                    ・Cihaz Kimliği: Android ID (Android) veya IDFV (iOS) gibi.<br>
+                    ・Sistem Ayarları: Sistem dili, platform türü, uygulama sürümü, ekran boyutu.
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Veri Kullanım Amaçları</h2>
+        <div class="flex-row">
+            <div class="flex-label">・Kullanıcı Tanımlama:</div>
+            <div class="flex-text">Aynı cihaz olup olmadığını cihaz kimliği üzerinden kontrol ederek yeni ve eski kullanıcıları ayırt etmek, böylece ayarlarınızın ve ilerlemenizin doğru şekilde ilişkilendirilmesini sağlamak için kullanılır.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Hizmet Optimizasyonu:</div>
+            <div class="flex-text">Uygulamanın uyumluluğunu ve işlevsel deneyimini sağlamamıza, sürdürmemize ve sürekli olarak geliştirmemize yardımcı olur.</div>
+        </div>
+
+        <h2>4. Üçüncü Taraf Hizmetleri: AdMob Reklamları</h2>
+        <p>Bu uygulama Google AdMob'u entegre etmiştir.</p>
+        <div class="flex-row">
+            <div class="flex-label">・Tetikleme Mekanizması:</div>
+            <div class="flex-text">Reklamlar yalnızca siz aktif olarak tıkladığınızda veya izlemeyi kabul ettiğinizde yüklenir ve gösterilir.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Veri İşleme:</div>
+            <div class="flex-text">AdMob, gösterim sıklığını kontrol etmek veya anonim analizler yapmak amacıyla reklam kimliğinizi (Advertising ID) toplayabilir.</div>
+        </div>
+
+        <h2>5. Hesap ve Veri Silme (Önemli Bildirim)</h2>
+        <p>Kişisel verileriniz üzerinde size tam kontrol hakkı tanıyoruz:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Silme İşlemi Adımı:</div>
+            <div class="flex-text">Uygulamanın sağ üst köşesindeki <span class="highlight">"Ayarlar" -> "Hesabı Sil"</span> seçeneğini kullanarak dilediğiniz zaman silme işlemini gerçekleştirebilirsiniz.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Sonuçların Açıklaması:</div>
+            <div class="flex-text"><span class="highlight">Lütfen unutmayın</span>, hesabınızı silmeyi onayladıktan sonra, gelecekte bu uygulamayı yeniden yükleseniz bile sistem bu cihazın daha önce bir kullanım geçmişi olduğunu algılayacaktır. Bu nedenle "Yeni Kullanıcı"lara özel avantajlardan veya indirimlerden tekrar yararlanamazsınız.</div>
+        </div>
+
+        <h2>6. Politika Güncellemeleri ve Duyurular</h2>
+        <p>Bu gizlilik politikası veya uygulama sürümü güncellendiğinde, uygulama içindeki <span class="highlight">"Duyurular"</span> özelliği aracılığıyla size bildirim gönderilecektir.</p>
+
+        <h2>7. Bize Ulaşın</h2>
+        <p>Bu politikayla ilgili herhangi bir sorunuz varsa, aşağıdaki kanallar aracılığıyla bizimle iletişime geçebilirsiniz:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Uygulama İçi Özellik:</div>
+            <div class="flex-text">Uygulama içindeki <span class="highlight">"Bize Ulaşın"</span> özelliğini kullanarak.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・E-posta:</div>
+            <div class="flex-text">İletişim bilgilerini almak için <span class="highlight">"Ayarlar" -> "Geliştirici Ekibi Hakkında"</span> bölümüne giderek.</div>
+        </div>
     </div>
+
 </body>
 </html>
