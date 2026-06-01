@@ -3,33 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - Politique de Confidentialité</title>
+    <title>Easy English - Politique de confidentialité</title>
     <style>
-        body { font-family: Helvetica, Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 170px; }
-        .highlight { font-weight: bold; color: #d35400; }
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* 標題與日期：置中 */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* 內容區塊容器 */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* 關鍵對齊樣式：Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* 防止標題被壓縮 */
+            font-weight: bold;
+            white-space: nowrap;  /* 確保標題不換行 */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* 微調與冒號的距離 */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* 調整 padding-left 數值，使其對齊上方文字開頭 */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* 手機版優化 */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* 在極小螢幕下可視情況改回 block，但目前設定能維持對齊 */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
-        <h1>Politique de Confidentialité</h1>
-        <p>Dernière mise à jour : 18 mars 2026</p>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English</h1>
+        <h1>Politique de confidentialité</h1>
+        <p class="update-date">Dernière mise à jour : 18 mars 2026</p>
     </div>
+
     <div class="main-content">
         <h2>1. Introduction</h2>
-        <p>Bienvenue sur eLearning Easy English. Cette politique détaille la gestion de vos données personnelles.</p>
-        <h2>2. Collecte de données</h2>
+        <p>Bienvenue sur Easy English (ci-après dénommée « l'Application »). La présente politique vise à expliquer comment nous traitons vos informations personnelles afin de garantir la sécurité de vos données et le respect de votre vie privée lors de votre utilisation du service.</p>
+
+        <h2>2. Données collectées</h2>
+        <p>Nous collectons uniquement le strict minimum de données nécessaires au bon fonctionnement de l'application :</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・Identification :</div>
-            <div>Nous collectons le <span class="highlight">"Nom ou Pseudo"</span> pour personnaliser votre interface.</div>
+            <div class="flex-label">・Informations d'identification personnelle :</div>
+            <div class="flex-text">Pour personnaliser l'affichage au sein de l'application, nous collectons le <span class="highlight">« nom ou pseudonyme »</span> que vous saisissez volontairement. Vous êtes libre de choisir d'utiliser votre identité réelle ou un pseudonyme.</div>
         </div>
-        <h2>3. Suppression</h2>
-        <p>Supprimez vos données via <span class="highlight">Paramètres -> Supprimer le compte</span>.</p>
+
+        <div class="flex-row">
+            <div class="flex-label">・Informations techniques et relatives à l'appareil :</div>
+            <div class="flex-text">
+                Afin d'assurer le maintien et le fonctionnement du système, nous collectons automatiquement les éléments suivants :
+                <div class="sub-info">
+                    ・Identifiant de l'appareil : par exemple, Android ID (Android) ou IDFV (iOS).<br>
+                    ・Paramètres système : langue du système, type de plateforme, version de l'application, taille de l'écran.
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Finalités de l'utilisation des données</h2>
+        <div class="flex-row">
+            <div class="flex-label">・Identification de l'utilisateur :</div>
+            <div class="flex-text">Vérification de l'unicité de l'appareil via son identifiant afin de distinguer les nouveaux utilisateurs des anciens, garantissant ainsi que vos paramètres et votre progression soient correctement synchronisés.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Optimisation du service :</div>
+            <div class="flex-text">Nous aider à fournir, maintenir et améliorer en continu la compatibilité ainsi que l'expérience globale des fonctionnalités de l'application.</div>
+        </div>
+
+        <h2>4. Services tiers : Publicités AdMob</h2>
+        <p>Cette application intègre le service Google AdMob.</p>
+        <div class="flex-row">
+            <div class="flex-label">・Mécanisme de déclenchement :</div>
+            <div class="flex-text">Les publicités sont chargées et affichées uniquement lorsque vous cliquez activement dessus ou que vous donnez votre accord pour les visionner.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Traitement des données :</div>
+            <div class="flex-text">AdMob peut collecter votre identifiant publicitaire (Advertising ID) pour la limitation de la fréquence de diffusion ou à des fins d'analyses anonymes.</div>
+        </div>
+
+        <h2>5. Suppression de compte et de données (Mention importante)</h2>
+        <p>Nous vous accordons un contrôle total sur vos données personnelles :</p>
+        <div class="flex-row">
+            <div class="flex-label">・Procédure de suppression :</div>
+            <div class="flex-text">Vous pouvez demander la suppression de vos données à tout moment via l'application en allant dans le coin supérieur droit : <span class="highlight">« Paramètres » (Settings) -> « Supprimer le compte » (Delete Account)</span>.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Conséquences de la suppression :</div>
+            <div class="flex-text"><span class="highlight">Attention</span> : une fois la suppression du compte confirmée, même si vous réinstallez l'application ultérieurement, le système détectera que cet appareil possède un historique d'utilisation. Par conséquent, vous ne pourrez plus bénéficier des avantages ou offres exclusives réservés aux « Nouveaux utilisateurs ».</div>
+        </div>
+
+        <h2>6. Mises à jour de la politique et annonces</h2>
+        <p>En cas de mise à jour de la présente politique de confidentialité ou de la version de l'application, nous vous en informerons via la fonction <span class="highlight">« Annonces » (Announcements)</span> intégrée à l'application.</p>
+
+        <h2>7. Nous contacter</h2>
+        <p>Si vous avez des questions concernant cette politique, vous pouvez nous contacter par les canaux suivants :</p>
+        <div class="flex-row">
+            <div class="flex-label">・Fonctionnalité intégrée à l'application :</div>
+            <div class="flex-text">Via la fonction <span class="highlight">« Nous contacter » (Contact Us)</span> de l'application.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">--- Adresse e-mail :</div>
+            <div class="flex-text">Rendez-vous dans <span class="highlight">« Paramètres » (Settings) -> « À propos de l'équipe de développement » (About Developer Team)</span> pour obtenir nos coordonnées.</div>
+        </div>
     </div>
+
 </body>
 </html>
