@@ -3,33 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - गोपनीयता नीति</title>
+    <title>Easy English - गोपनीयता नीति</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 2.0; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 160px; color: #34495e; }
-        .highlight { font-weight: bold; color: #d35400; }
+        body {
+            font-family: "Noto Sans Devanagari", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* 標題與日期：置中 */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* 內容區塊容器 */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* 關鍵對齊樣式：Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* 防止標題被壓縮 */
+            font-weight: bold;
+            white-space: nowrap;  /* 確保標題不換行 */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* 微調與冒號的距離 */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* 調整 padding-left 數值，使其對齊上方文字開頭 */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* 手機版優化 */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* 在極小螢幕下可視情況改回 block，但目前設定能維持對齊 */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
-        <h1>गोपनीयता नीति</h1>
-        <p>अंतिम अपडेट: 18 मार्च, 2026</p>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English</h1>
+        <h1>गोपनीयता नीति (Privacy Policy)</h1>
+        <p class="update-date">अंतिम अपडेट तिथि: 18 मार्च 2026</p>
     </div>
+
     <div class="main-content">
-        <h2>1. परिचय</h2>
-        <p>eLearning Easy English में आपका स्वागत है। यह नीति बताती है कि हम आपकी जानकारी का प्रबंधन कैसे करते हैं।</p>
-        <h2>2. डेटा संग्रह</h2>
+        <h2>1. परिचय (Introduction)</h2>
+        <p>Easy English (इसके बाद "यह ऐप" के रूप में संदर्भित) में आपका स्वागत है। इस नीति का उद्देश्य यह स्पष्ट करना है कि हम आपकी व्यक्तिगत जानकारी को कैसे संभालते हैं, ताकि सेवा के उपयोग के दौरान आपके डेटा की सुरक्षा और गोपनीयता सुनिश्चित की जा सके।</p>
+
+        <h2>2. हमारे द्वारा एकत्र किया जाने वाला डेटा</h2>
+        <p>हम केवल ऐप के कार्यों को सुचारू रूप से चलाने के लिए आवश्यक न्यूनतम डेटा एकत्र करते हैं:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・पहचान:</div>
-            <div>हम वैयक्तिकरण के लिए आपके द्वारा दर्ज किया गया <span class="highlight">"नाम या उपनाम"</span> एकत्र करते हैं।</div>
+            <div class="flex-label">・व्यक्तिगत पहचान जानकारी:</div>
+            <div class="flex-text">앱 में व्यक्तिगत प्रदर्शन के लिए, हम आपके द्वारा सक्रिय रूप से दर्ज किया गया <span class="highlight">"नाम या उपनाम (Nickname)"</span> एकत्र करते हैं। आप अपने वास्तविक नाम या उपनाम का उपयोग करने के लिए स्वतंत्र हैं।</div>
         </div>
-        <h2>3. हटाना</h2>
-        <p>आप <span class="highlight">सेटिंग्स -> खाता हटाएं</span> के माध्यम से अपना डेटा हटा सकते हैं।</p>
+
+        <div class="flex-row">
+            <div class="flex-label">・डिवाइस और तकनीकी जानकारी:</div>
+            <div class="flex-text">
+                सिस्टम के संचालन को बनाए रखने के लिए, हम निम्नलिखित डेटा स्वचालित रूप से एकत्र करते हैं:
+                <div class="sub-info">
+                    ・डिवाइस पहचानकर्ता (ID): जैसे Android ID (Android) या IDFV (iOS)।<br>
+                    ・सिस्टम सेटिंग्स: सिस्टम की भाषा, प्लेटफॉर्म का प्रकार, ऐप का वर्जन और स्क्रीन का आकार।
+                </div>
+            </div>
+        </div>
+
+        <h2>3. डेटा उपयोग का उद्देश्य</h2>
+        <div class="flex-row">
+            <div class="flex-label">・उपयोगकर्ता की पहचान:</div>
+            <div class="flex-text">हम डिवाइस पहचानकर्ता (ID) के माध्यम से जांच करते हैं कि क्या यह वही डिवाइस है, जिससे नए और पुराने उपयोगकर्ताओं में अंतर किया जा सके। यह सुनिश्चित करता है कि आपकी सेटिंग्स और सीखने की प्रगति सही तरीके से जुड़ी रहे।</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・सेवा का अनुकूलन:</div>
+            <div class="flex-text">यह हमें ऐप की अनुकूलता (compatibility) और कार्यात्मक अनुभव को प्रदान करने, बनाए रखने और निरंतर सुधारने में मदद करताhd है।</div>
+        </div>
+
+        <h2>4. तृतीय-पक्ष सेवाएं: AdMob विज्ञापन</h2>
+        <p>यह एप्लिकेशन Google AdMob के साथ एकीकृत (integrated) है।</p>
+        <div class="flex-row">
+            <div class="flex-label">・ट्रिगर तंत्र:</div>
+            <div class="flex-text">विज्ञापन केवल तभी लोड और दिखाए जाएंगे जब आप सक्रिय रूप से उन पर क्लिक करेंगे या उन्हें देखने के लिए सहमत होंगे।</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・डेटा प्रोसेसिंग:</div>
+            <div class="flex-text">AdMob विज्ञापनों की आवृत्ति नियंत्रण (frequency control) या अज्ञात विश्लेषण के लिए आपकी विज्ञापन ID एकत्र कर सकता है।</div>
+        </div>
+
+        <h2>5. खाता और डेटा हटाना (महत्वपूर्ण घोषणा)</h2>
+        <p>हम आपको आपके व्यक्तिगत डेटा पर पूर्ण नियंत्रण प्रदान करते हैं:</p>
+        <div class="flex-row">
+            <div class="flex-label">・हटाने का तरीका:</div>
+            <div class="flex-text">आप ऐप के भीतर ऊपर दाईं ओर स्थित <span class="highlight">"सेटिंग्स" (Settings) -> "खाता हटाएं" (Delete Account)</span> के माध्यम से किसी भी समय अपना खाता हटा सकते हैं।</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・परिणामों का विवरण:</div>
+            <div class="flex-text"><span class="highlight">कृपया ध्यान दें</span>, एक बार जब आप खाता हटाने की पुष्टि कर देते हैं, तो भविष्य में इस ऐप को फिर से इंस्टॉल करने पर भी सिस्टम यह पहचान लेगा कि इस डिवाइस का पिछला उपयोग इतिहास रहा है। इसके परिणामस्वरूप, आप "नए उपयोगकर्ता" के रूप में मिलने वाले विशेष लाभों या ऑफ़र का पुनः आनंद नहीं ले पाएंगे।</div>
+        </div>
+
+        <h2>6. नीति अपडेट और घोषणाएं</h2>
+        <p>जब इस गोपनीयता नीति या ऐप के वर्जन में कोई अपडेट होगा, तो हम आपको ऐप के भीतर <span class="highlight">"घोषणा" (Announcements)</span> फीचर के माध्यम से सूचित करेंगे.</p>
+
+        <h2>7. हमसे संपर्क करें</h2>
+        <p>यदि इस नीति के बारे में आपके कोई प्रश्न हैं, तो आप निम्नलिखित चैनलों के माध्यम से हमसे संपर्क कर सकते हैं:</p>
+        <div class="flex-row">
+            <div class="flex-label">・इन-ऐप फीचर:</div>
+            <div class="flex-text">앱 के भीतर <span class="highlight">"हमसे संपर्क करें" (Contact Us)</span> फीचर के माध्यम से।</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・ई-मेल:</div>
+            <div class="flex-text">कृपया संपर्क जानकारी प्राप्त करने के लिए <span class="highlight">"सेTINGS" (Settings) -> "डेवलपर टीम के बारे में" (About Developer Team)</span> पर जाएं।</div>
+        </div>
     </div>
+
 </body>
 </html>
