@@ -3,33 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - Chính sách Quyền riêng tư</title>
+    <title>Easy English - Học Tiếng Anh Dễ Dàng Chính Sách Bảo Mật</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 170px; }
-        .highlight { font-weight: bold; color: #d35400; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* Tiêu đề và ngày tháng: Căn giữa */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* Container vùng nội dung */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* Kiểu căn chỉnh quan trọng: Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* Ngăn tiêu đề bị nén */
+            font-weight: bold;
+            white-space: nowrap;  /* Đảm bảo tiêu đề không xuống dòng */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* Tinh chỉnh khoảng cách với dấu hai chấm */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* Điều chỉnh padding-left để căn lề thẳng với phần văn bản phía trên */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* Tối ưu hóa cho phiên bản di động */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* Trong màn hình cực nhỏ, có thể chuyển lại thành block nếu cần thiết, nhưng hiện tại cấu hình vẫn duy trì căn lề tốt */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
-        <h1>Chính sách Quyền riêng tư</h1>
-        <p>Cập nhật lần cuối: 18 tháng 3, 2026</p>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English - Học Tiếng Anh Dễ Dàng</h1>
+        <h1>Chính Sách Bảo Mật</h1>
+        <p class="update-date">Cập nhật lần cuối: Ngày 18 tháng 3 năm 2026</p>
     </div>
+
     <div class="main-content">
         <h2>1. Giới thiệu</h2>
-        <p>Chào mừng bạn đến với eLearning Easy English. Chính sách này giải thích cách chúng tôi quản lý thông tin của bạn.</p>
-        <h2>2. Thu thập dữ liệu</h2>
+        <p>Chào mừng bạn đến với Easy English - Học Tiếng Anh Dễ Dàng (sau đây gọi tắt là "Ứng dụng này"). Chính sách này nhằm giải thích cách chúng tôi xử lý thông tin cá nhân của bạn, đảm bảo an toàn dữ liệu và quyền riêng tư của bạn trong quá trình sử dụng.</p>
+
+        <h2>2. Dữ liệu chúng tôi thu thập</h2>
+        <p>Chúng tôi chỉ thu thập lượng dữ liệu tối thiểu cần thiết để thực hiện các chức năng:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・Định danh:</div>
-            <div>Chúng tôi thu thập <span class="highlight">"Tên hoặc Biệt danh"</span> để cá nhân hóa ứng dụng.</div>
+            <div class="flex-label">・Thông tin định danh cá nhân:</div>
+            <div class="flex-text">Để hiển thị cá nhân hóa trong ứng dụng, chúng tôi thu thập <span class="highlight">"Tên hoặc Biệt danh"</span> do bạn chủ động nhập vào. Bạn có thể tự do lựa chọn sử dụng tên thật hoặc biệt danh.</div>
         </div>
-        <h2>3. Xóa dữ liệu</h2>
-        <p>Bạn có thể xóa tài khoản thông qua <span class="highlight">Cài đặt -> Xóa tài khoản</span>.</p>
+
+        <div class="flex-row">
+            <div class="flex-label">・Thông tin thiết bị và kỹ thuật:</div>
+            <div class="flex-text">
+                Để duy trì sự vận hành của hệ thống, chúng tôi sẽ tự động thu thập các mục sau:
+                <div class="sub-info">
+                    ・Mã định danh thiết bị: Ví dụ: Android ID (Android) hoặc IDFV (iOS).<br>
+                    ・Cài đặt hệ thống: Ngôn ngữ hệ thống, loại nền tảng, phiên bản ứng dụng, kích thước màn hình.
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Mục đích sử dụng dữ liệu</h2>
+        <div class="flex-row">
+            <div class="flex-label">・Nhận diện người dùng:</div>
+            <div class="flex-text">Thông qua mã định danh thiết bị để kiểm tra xem có cùng một thiết bị hay không, dùng để phân biệt người dùng mới và cũ, đảm bảo các cài đặt và tiến trình của bạn được liên kết chính xác.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Tối ưu hóa dịch vụ:</div>
+            <div class="flex-text">Giúp chúng tôi cung cấp, duy trì và liên tục cải thiện khả năng tương thích cũng như trải nghiệm chức năng của Ứng dụng.</div>
+        </div>
+
+        <h2>4. Dịch vụ của bên thứ ba: Quảng cáo AdMob</h2>
+        <p>Ứng dụng này có tích hợp Google AdMob.</p>
+        <div class="flex-row">
+            <div class="flex-label">・Cơ chế kích hoạt:</div>
+            <div class="flex-text">Quảng cáo sẽ chỉ được tải và hiển thị khi bạn chủ động nhấp vào hoặc đồng ý xem.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Xử lý dữ liệu:</div>
+            <div class="flex-text">AdMob có thể thu thập ID quảng cáo của bạn để kiểm soát tần suất hiển thị hoặc phân tích ẩn danh.</div>
+        </div>
+
+        <h2>5. Xóa tài khoản và dữ liệu (Tuyên bố quan trọng)</h2>
+        <p>Chúng tôi trao cho bạn quyền kiểm soát hoàn toàn đối với dữ liệu cá nhân của mình:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Đường dẫn xóa:</div>
+            <div class="flex-text">Bạn có thể thực hiện thao tác xóa bất kỳ lúc nào thông qua mục <span class="highlight">"Cài đặt" -> "Xóa tài khoản"</span> ở góc trên bên phải ứng dụng.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Giải thích hậu quả:</div>
+            <div class="flex-text"><span class="highlight">Xin lưu ý</span>, một khi bạn xác nhận xóa tài khoản, ngay cả khi bạn cài đặt lại ứng dụng này trong tương lai, hệ thống vẫn sẽ nhận diện thiết bị đó đã từng có lịch sử sử dụng, và bạn sẽ không thể hưởng lại các phúc lợi hoặc ưu đãi dành riêng cho "Người dùng mới" nữa.</div>
+        </div>
+
+        <h2>6. Cập nhật và thông báo chính sách</h2>
+        <p>Khi chính sách bảo mật này hoặc phiên bản ứng dụng có sự cập nhật, chúng tôi sẽ phát tin thông báo đến bạn thông qua chức năng <span class="highlight">"Thông báo chung"</span> trong ứng dụng.</p>
+
+        <h2>7. Liên hệ với chúng tôi</h2>
+        <p>Nếu bạn có bất kỳ thắc mắc nào về chính sách này, bạn có thể phản hồi qua các kênh sau:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Tính năng trong ứng dụng:</div>
+            <div class="flex-text">Thông qua tính năng <span class="highlight">"Liên hệ với chúng tôi"</span> trong ứng dụng.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Email:</div>
+            <div class="flex-text">Đi tới <span class="highlight">"Cài đặt" -> "Về đội ngũ phát triển"</span> để lấy thông tin liên hệ.</div>
+        </div>
     </div>
+
 </body>
 </html>
