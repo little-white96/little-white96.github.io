@@ -3,34 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - Политика конфиденциальности</title>
+    <title>Easy English - Политика конфиденциальности</title>
     <style>
-        body { font-family: "Segoe UI", Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; }
-        h1 { font-size: 1.8em; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 200px; }
-        .highlight { font-weight: bold; color: #d35400; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* Заголовок и дата: по центру */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* Контейнер основного контента */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* Ключевой стиль выравнивания: Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* Предотвращает сжатие заголовка */
+            font-weight: bold;
+            white-space: nowrap;  /* Гарантирует, что заголовок не будет переноситься */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* Тонкая настройка расстояния после двоеточия */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* Настройка padding-left для выравнивания с началом текста выше */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* Оптимизация для мобильных устройств */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* На очень маленьких экранах можно при необходимости вернуть block, но текущая настройка сохраняет выравнивание */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English</h1>
         <h1>Политика конфиденциальности</h1>
-        <p>Последнее обновление: 18 марта 2026 г.</p>
+        <p class="update-date">Дата последнего обновления: 18 марта 2026 г.</p>
     </div>
+
     <div class="main-content">
         <h2>1. Введение</h2>
-        <p>Добро пожаловать в eLearning Easy English. Эта политика описывает, как мы обрабатываем ваши данные.</p>
-        <h2>2. Сбор данных</h2>
+        <p>Добро пожаловать в Easy English (далее именуемое «данное Приложение»). Настоящая политика призвана разъяснить, как мы обрабатываем вашу личную информацию, обеспечивая безопасность данных и конфиденциальность в процессе использования приложения.</p>
+
+        <h2>2. Данные, которые мы собираем</h2>
+        <p>Мы собираем только минимальный объем данных, необходимый для реализации функций приложения:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・Идентификация:</div>
-            <div>Мы собираем <span class="highlight">«Имя или никнейм»</span> для персонализации интерфейса.</div>
+            <div class="flex-label">・Личная информация:</div>
+            <div class="flex-text">Для персонализации отображения в Приложении мы собираем <span class="highlight">«имя или никнейм»</span>, которые вы вводите самостоятельно. Вы можете свободно использовать как настоящее имя, так и псевдоним.</div>
         </div>
-        <h2>3. Удаление</h2>
-        <p>Вы можете удалить аккаунт в любое время через <span class="highlight">Настройки -> Удалить аккаунт</span>.</p>
+
+        <div class="flex-row">
+            <div class="flex-label">・Информация об устройстве и технические данные:</div>
+            <div class="flex-text">
+                Для поддержания работы системы мы автоматически собираем следующие данные:
+                <div class="sub-info">
+                    ・Идентификатор устройства: например, Android ID (для Android) или IDFV (для iOS).<br>
+                    ・Системные настройки: язык системы, тип платформы, версия Приложения, размер экрана.
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Цели использования данных</h2>
+        <div class="flex-row">
+            <div class="flex-label">・Идентификация пользователя:</div>
+            <div class="flex-text">Проверка устройства по его идентификатору, чтобы определить, является ли пользователь новым или существующим. Это необходимо для корректного связывания ваших настроек и прогресса.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Оптимизация сервиса:</div>
+            <div class="flex-text">Помогает нам предоставлять, поддерживать и непрерывно улучшать совместимость и функционал Приложения.</div>
+        </div>
+
+        <h2>4. Сторонние сервисы: Реклама AdMob</h2>
+        <p>В данное Приложение интегрирован сервис Google AdMob.</p>
+        <div class="flex-row">
+            <div class="flex-label">・Механизм запуска:</div>
+            <div class="flex-text">Реклама загружается и отображается только тогда, когда вы самостоятельно нажимаете на нее или соглашаетесь на просмотр.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Обработка данных:</div>
+            <div class="flex-text">AdMob может собирать ваш рекламный идентификатор (Advertising ID) для контроля частоты показов или анонимного анализа.</div>
+        </div>
+
+        <h2>5. Удаление аккаунта и данных (Важное заявление)</h2>
+        <p>Мы предоставляем вам полный контроль над вашими личными данными:</p>
+        <div class="flex-row">
+            <div class="flex-label">--- Способ удаления:</div>
+            <div class="flex-text">Вы можете в любое время удалить данные через меню в правом верхнем углу Приложения: <span class="highlight">«Настройки» -> «Удалить аккаунт»</span>.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">--- Последствия удаления:</div>
+            <div class="flex-text"><span class="highlight">Обратите внимание</span>: как только вы подтвердите удаление аккаунта, даже если вы снова установите Приложение в будущем, система распознает, что у этого устройства уже была история использования. Вы больше не сможете повторно получить эксклюзивные бонусы или специальные предложения для «новых пользователей».</div>
+        </div>
+
+        <h2>6. Обновления политики и уведомления</h2>
+        <p>При обновлении настоящей политики конфиденциальности или версии Приложения мы отправим вам уведомление с помощью функции <span class="highlight">«Объявления»</span> внутри Приложения.</p>
+
+        <h2>7. Связь с нами</h2>
+        <p>Если у вас возникли вопросы по поводу данной политики, вы можете связаться с нами следующими способами:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Внутри приложения:</div>
+            <div class="flex-text">Через функцию <span class="highlight">«Связаться с нами»</span> внутри Приложения.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Электронная почта:</div>
+            <div class="flex-text">Перейдите в <span class="highlight">«Настройки» -> «О команде разработчиков»</span>, чтобы получить контактную информацию.</div>
+        </div>
     </div>
+
 </body>
 </html>
