@@ -3,38 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eLearning Easy English - Datenschutzerklärung</title>
+    <title>Easy English - Datenschutzrichtlinie</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 50px 20px; background-color: #f4f7f9; }
-        .header-section { text-align: center; margin-bottom: 40px; }
-        .main-content { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 40px 50px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; margin-top: 35px; }
-        .flex-row { display: flex; margin-bottom: 15px; align-items: flex-start; }
-        .flex-label { flex-shrink: 0; font-weight: bold; min-width: 180px; color: #34495e; }
-        .highlight { font-weight: bold; color: #d35400; }
-        @media (max-width: 600px) { .flex-row { flex-direction: column; } }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f4f7f9;
+        }
+
+        /* 標題與日期：置中 */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        /* 內容區塊容器 */
+        .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.25em;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* 關鍵對齊樣式：Flexbox */
+        .flex-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .flex-label {
+            flex-shrink: 0;       /* 防止標題被壓縮 */
+            font-weight: bold;
+            white-space: nowrap;  /* 確保標題不換行 */
+            color: #34495e;
+        }
+
+        .flex-text {
+            flex-grow: 1;
+            padding-left: 2px;    /* 微調與冒號的距離 */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .sub-info {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.95em;
+            /* 調整 padding-left 數值，使其對齊上方文字開頭 */
+            padding-left: 0; 
+            margin-left: 0;
+            display: block;
+        }
+
+        /* 手機版優化 */
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .flex-row {
+                /* 在極小螢幕下可視情況改回 block，但目前設定能維持對齊 */
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="header-section">
-        <h1>eLearning Easy English</h1>
-        <h1>Datenschutzerklärung</h1>
-        <p>Zuletzt aktualisiert: 18. März 2026</p>
+        <h1 style="font-size: 2.4em; margin-bottom: 5px;">Easy English</h1>
+        <h1>Datenschutzrichtlinie</h1>
+        <p class="update-date">Zuletzt aktualisiert: 18. März 2026</p>
     </div>
+
     <div class="main-content">
-        <h2>1. Einleitung</h2>
-        <p>Willkommen bei eLearning Easy English. Diese Richtlinie erläutert, wie wir mit Ihren Informationen umgehen.</p>
-        <h2>2. Datenerhebung</h2>
+        <h2>1. Einführung</h2>
+        <p>Willkommen bei Easy English (nachfolgend bezeichnet als „die Anwendung“). Diese Richtlinie erläutert, wie wir mit Ihren personenbezogenen Daten umgehen, um Ihre Datensicherheit und Privatsphäre während der Nutzung der App zu gewährleisten.</p>
+
+        <h2>2. Von uns erhobene Daten</h2>
+        <p>Wir erheben nur das für die Bereitstellung unserer Funktionen erforderliche Minimum an Daten:</p>
+        
         <div class="flex-row">
-            <div class="flex-label">・Identifikation:</div>
-            <div>Wir erfassen den von Ihnen eingegebenen <span class="highlight">"Namen oder Nicknamen"</span> zur Personalisierung.</div>
+            <div class="flex-label">・Personenbezogene Daten:</div>
+            <div class="flex-text">Zur personalisierten Anzeige in der App erfassen wir den von Ihnen freiwillig eingegebenen <span class="highlight">„Namen oder Nicknamen“</span>. Es steht Ihnen frei, Ihren echten Namen oder ein Pseudonym zu verwenden.</div>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-label">・Geräte- und technische Informationen:</div>
+            <div class="flex-text">
+                Zur Aufrechterhaltung des Systembetriebs erfassen wir automatisch folgende Daten:
+                <div class="sub-info">
+                    ・Geräte-ID: Wie z. B. Android-ID (Android) oder IDFV (iOS).<br>
+                    ・Systemeinstellungen: Systemsprache, Plattformtyp, App-Version und Bildschirmgröße.
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Zwecke der Datenverwendung</h2>
+        <div class="flex-row">
+            <div class="flex-label">・Benutzeridentifikation:</div>
+            <div class="flex-text">Wir nutzen die Geräte-ID, um festzustellen, ob es sich um dasselbe Gerät handelt. Dies hilft uns, zwischen neuen und wiederkehrenden Nutzern zu unterscheiden, und stellt sicher, dass Ihre Einstellungen und Fortschritte korrekt verknüpft werden.</div>
         </div>
         <div class="flex-row">
-            <div class="flex-label">・Geräteinformationen:</div>
-            <div>Automatische Erfassung von Android ID/IDFV, Sprache und App-Version.</div>
+            <div class="flex-label">・Optimierung des Dienstes:</div>
+            <div class="flex-text">Um uns dabei zu helfen, die Kompatibilität und das funktionale Erlebnis der App bereitzustellen, aufrechtzuerhalten und kontinuierlich zu verbessern.</div>
         </div>
-        <h2>3. Löschung</h2>
-        <p>Über <span class="highlight">Einstellungen -> Konto löschen</span> können Sie Ihre Daten jederzeit entfernen.</p>
+
+        <h2>4. Drittanbieter-Dienste: AdMob-Werbung</h2>
+        <p>Diese Anwendung integriert Google AdMob.</p>
+        <div class="flex-row">
+            <div class="flex-label">・Auslösemechanismus:</div>
+            <div class="flex-text">Werbeanzeigen werden nur geladen und angezeigt, wenn Sie aktiv darauf klicken oder dem Ansehen zustimmen.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">--- Datenverarbeitung:</div>
+            <div class="flex-text">AdMob erfasst möglicherweise Ihre Werbe-ID zur Frequenzbegrenzung (Frequency Capping) oder für anonyme Analysen.</div>
+        </div>
+
+        <h2>5. Konto- und Datenlöschung (Wichtiger Hinweis)</h2>
+        <p>Wir geben Ihnen die volle Kontrolle über Ihre personenbezogenen Daten:</p>
+        <div class="flex-row">
+            <div class="flex-label">・Löschpfad:</div>
+            <div class="flex-text">Sie können Ihre Daten jederzeit über die obere rechte Ecke der App löschen: <span class="highlight">„Einstellungen“ -> „Konto löschen“</span>.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・Folgen der Löschung:</div>
+            <div class="flex-text"><span class="highlight">Bitte beachten Sie</span>, dass das System auch bei einer zukünftigen Neuinstallation der Anwendung erkennt, dass dieses Gerät bereits registriert war, sobald Sie die Löschung Ihres Kontos bestätigen. Daher können Sie exklusive Vorteile oder Angebote, die für „neue Nutzer“ reserviert sind, nicht erneut in Anspruch nehmen.</div>
+        </div>
+
+        <h2>6. Richtlinienaktualisierungen und Ankündigungen</h2>
+        <p>Bei Aktualisierungen dieser Datenschutzrichtlinie oder der App-Version werden wir Sie über die interne Funktion <span class="highlight">„Ankündigungen“</span> der App benachrichtigen.</p>
+
+        <h2>7. Kontakt</h2>
+        <p>Wenn Sie Fragen zu dieser Richtlinie haben, können Sie uns über die folgenden Kanäle kontaktieren:</p>
+        <div class="flex-row">
+            <div class="flex-label">・In-App-Funktion:</div>
+            <div class="flex-text">Über die Funktion <span class="highlight">„Kontakt“</span> innerhalb der App.</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-label">・E-Mail:</div>
+            <div class="flex-text">Gehen Sie zu <span class="highlight">„Einstellungen“ -> „Über den Entwickler“</span>, um unsere Kontaktinformationen zu erhalten.</div>
+        </div>
     </div>
+
 </body>
 </html>
